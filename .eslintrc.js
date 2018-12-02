@@ -1,10 +1,10 @@
 module.exports = {
   root: true,
   env: {
-    node: true
+    browser: true
   },
-  'extends': [
-    'plugin:vue/essential',
+  extends: [
+    'plugin:vue/recommended',
     '@vue/standard',
     '@vue/typescript'
   ],
@@ -12,7 +12,15 @@ module.exports = {
     'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off'
   },
+  plugins: [
+    'typescript',
+    // 'spellcheck',
+    'vue'
+  ],
   parserOptions: {
+    jsx: true,
+    useJSXTextNode: true,
+    sourceType: 'module',
     parser: 'typescript-eslint-parser'
   }
 }
