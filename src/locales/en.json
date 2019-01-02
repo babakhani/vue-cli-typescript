@@ -1,3 +1,9 @@
 {
-  "message": "hello i18n !!"
+  "auth": {
+	"signin": "SignIn",
+	"signOut": "SignOut"
+  },
+  "messages": {
+	"404": "Error 404, Page not found"
+  }
 }
