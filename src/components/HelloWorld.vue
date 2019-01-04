@@ -1,8 +1,7 @@
 <template>
-  <div class="hello">
-    <pre>
-      {{ isAuthenticated }}
-    </pre>
+  <div class="view-hello-world container">
+    <b-button @click="signIn">{{ $t('auth.signIn') }}</b-button>
+    <b-button @click="signOut">{{ $t('auth.signOut') }}</b-button>
     <ul>
       <li><a
         href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-babel"

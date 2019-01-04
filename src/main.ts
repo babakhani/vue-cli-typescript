@@ -4,6 +4,8 @@ import router from './router'
 import store from './store/index'
 import './registerServiceWorker'
 import i18n from './i18n'
+import BootstrapVue from 'bootstrap-vue'
+Vue.use(BootstrapVue)
 Vue.config.productionTip = true
 new Vue({
   router,

@@ -16,7 +16,6 @@ export default {
       context.state.siginLoading = true
       promise.then((response: any) => {
         context.state.siginLoading = false
-        console.log(response)
         context.commit('SignIn', payload)
       })
       promise.catch(() => {
